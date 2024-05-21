@@ -10,14 +10,14 @@
 
 # 网站图标
 favicon:
-  enable: true
+  enable: false
   icon: /images/favicon.png
   touch_icon: /images/favicon.png
 
 # 用户头像与昵称
 avatar:
-  author_photo: /images/avatar.png
-  author_nickname: LEEDOM
+  author_photo: /images/rramos-avatar.png
+  author_nickname: rramos.github.io 
   path: /
 
 # 文章末尾的上一页与下一页
@@ -38,28 +38,24 @@ link:
   -
     name: github
     icon: github
-    path: https://github.com/leedom92/hexo-theme-leedom
+    path: https://github.com/rramos
     target: _blank
   -
     name: email
     icon: envelope
-    path: 
-  -
-    name: facebook
-    icon: facebooksquare
-    path:
+    path: mailto:rui.ms.ramos@gmail.com
   -
     name: twitter
     icon: twitter
-    path:
+    path: https://x.com/RuiMSRamos
   -
-    name: wechat
+    name: about
+    icon: qq 
+    path: /about
+  -
+    name: discord
     icon: wechat
-    path:
-  -
-    name: weibo
-    icon: weibo
-    path:
+    path: https://discord.gg/YfCmqpG53p 
   -
     # rss需安装 hexo-generator-feed 插件
     # 具体参照https://github.com/hexojs/hexo-generator-feed
@@ -72,11 +68,8 @@ link:
 # 页脚信息
 footer:
   -
-    name: Copyright © Leedom 2021
-    path: https://github.com/leedom92/hexo-theme-leedom
-  -
-    name: Theme by Leedom | Powered by Hexo
-    path: https://github.com/leedom92/hexo-theme-leedom
+    name: Copyright © Rui Ramos 2024
+    path: https://github.com/rramos
 
 # 文章搜索
 search:
