@@ -75,3 +75,8 @@ footer:
 search:
   enable: true
   placeholder: 
+
+# Added GA4 Configuration
+ga4:
+  enable: true
+  id: G-6VMKQTVJC2
