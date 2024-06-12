@@ -65,4 +65,20 @@
   <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
   <%- js(['/js/fancybox.js']) %>
 
+  <!-- GA4 consent -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('consent', 'default', {
+      'ad_user_data': 'denied',
+      'ad_personalization': 'denied',
+      'ad_storage': 'denied',
+      'analytics_storage': 'denied',
+      'wait_for_update': 500,
+    });
+    dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
+    </script>
+
+  <!-- Googel site verification -->
+  <meta name="google-site-verification" content="<%- theme.google-crux.id %>" />
 </head>

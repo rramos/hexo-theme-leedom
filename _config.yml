@@ -80,3 +80,6 @@ search:
 ga4:
   enable: true
   id: G-6VMKQTVJC2
+
+google-crux:
+  id: "Em0OaYgLD4MC3tIHbwqDxAklIn7JzrtipNZd7z1kqFI"
