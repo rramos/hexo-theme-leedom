@@ -79,6 +79,9 @@
     dataLayer.push({'gtm.start': new Date().getTime(), 'event': 'gtm.js'});
     </script>
 
-  <!-- Googel site verification -->
-  <meta name="google-site-verification" content="<%- theme.google-crux.id %>" />
+  <% if (theme.googlecrux.enable) { %>
+    <!-- Googel site verification -->
+    <meta name="google-site-verification" content='<%- theme.googlecrux.id %>'' />
+  <% } %>
+   
 </head>
