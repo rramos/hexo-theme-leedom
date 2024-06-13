@@ -78,7 +78,7 @@ search:
 
 # Added GA4 Configuration
 ga4:
-  enable: true
+  enable: false
   id: G-6VMKQTVJC2
 
 tagmanager:
