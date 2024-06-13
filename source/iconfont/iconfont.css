@@ -24,7 +24,10 @@
 }
 
 .icon-search:before {
-  content: "\e62e";
+    content: "\e62e";
+    color: #e96900;
+    font-size: large;
+    text-shadow: 5px 2px 5px #cccccc;
 }
 
 .icon-chevronleft:before {
