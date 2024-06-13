@@ -81,6 +81,10 @@ ga4:
   enable: true
   id: G-6VMKQTVJC2
 
+tagmanager:
+  enable: true
+  id: GTM-MXRC4D
+
 googlecrux:
   enable: true
   id: "Em0OaYgLD4MC3tIHbwqDxAklIn7JzrtipNZd7z1kqFI"
