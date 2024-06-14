@@ -1,9 +1,5 @@
 var klaroConfig = {
     acceptAll: true,
-    testing: true,
-    htmlTexts: false,
-    default: false,
-    mustConsent: true,
     services: [
         {
             name: 'google-tag-manager',

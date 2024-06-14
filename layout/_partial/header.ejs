@@ -59,7 +59,9 @@
 
   
   <!-- Include klaro css for consent banner -->
-  <%- css(['/css/klaro.css']) %>
+  <% if (theme.consent.enable) { %>
+     <%- css(['/css/klaro.css']) %>
+  <% } %>
 
   <!-- jquery3.3.1 -->
   <%- js(['/js/jquery.min.js']) %>
@@ -68,6 +70,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" rel="stylesheet">
   <script async src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
 
+  <!-- fancybox -->
   <%- js(['/js/fancybox.js']) %>
 
   <%- partial('_partial/tagmanager_start') %>
@@ -76,35 +79,5 @@
     <!-- Googel site verification -->
     <meta name="google-site-verification" content='<%- theme.googlecrux.id %>'' />
   <% } %>
-
-  <!--
-  <script src="https://cdn.jsdelivr.net/gh/manucaralmo/GlowCookies@3.1.8/src/glowCookies.min.js"></script>
-  <script>
-    glowCookies.start('en', {
-        style: 2,
-        analytics: 'G-GTM-MXRC4DK',
-        facebookPixel: '',
-        hideAfterClick: true,
-        border: 'none',
-        position: 'right',
-        policyLink: 'https://google.pt/cookiepolicy',
-        customScript: [{ type: 'custom', position: 'body', content: `console.log('my custom js');` }],
-        bannerDescription: 'We use cookies and other tracking technologies to improve your browsing experience on our website, to show you personalized content and targeted ads, to analyze our website traffic, and to understand where our visitors are coming from.',
-        bannerLinkText: 'banner link text',
-        bannerBackground: '#FFF',
-        bannerColor: '#666',
-        bannerHeading: '<h2>We use Cookies</h2>',
-        acceptBtnText: 'Accept',
-        acceptBtnColor: '#000',
-        acceptBtnBackground: '#e96900',
-        rejectBtnText: 'Reject',
-        rejectBtnBackground: '#666',
-        rejectBtnColor: '#000',
-        manageColor: 'white',
-        manageBackground: 'blue',
-        manageText: 'cookies text'
-    });
-  </script>
-  -->
 
 </head>

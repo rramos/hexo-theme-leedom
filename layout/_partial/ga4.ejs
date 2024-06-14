@@ -1,7 +1,7 @@
 <% if (theme.ga4.enable) { %>
 
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=<%- theme.ga4.id %>"></script>
+<script type="text/plain" data-type="application/javascript" async data-name="google-analytics" data-src="https://www.googletagmanager.com/gtag/js?id=<%- theme.ga4.id %>"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
