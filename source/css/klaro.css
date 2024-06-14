@@ -627,10 +627,9 @@ to create a white background.
     right: var(--notice-right, 10px);
     left: auto;
     left: var(--notice-left, auto);
-    bottom: 20px;
-    bottom: var(--notice-bottom, 20px);
-    top: auto;
-    top: var(--notice-top, auto);
+    top: 20px;
+    top: var(--notice-top, 20px);
+    bottom: auto;
     max-width: 400px;
     max-width: var(--notice-max-width, 500px);
     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2), 5px 5px 10px 0 rgba(0, 0, 0, 0.19);
