@@ -26,8 +26,15 @@
 .icon-search:before {
     content: "\e62e";
     color: #e96900;
-    font-size: large;
+    font-size: 20px;
     text-shadow: 5px 2px 5px #cccccc;
+    -webkit-transition: font-size 0.25s linear, width 0.25s linear;
+    -moz-transition: font-size 0.25s linear, width 0.25s linear;
+    transition: font-size 0.25s linear, width 0.25s linear;
+}
+
+.icon-search:hover {
+  font-size: 40px;
 }
 
 .icon-chevronleft:before {
@@ -43,7 +50,21 @@
 }
 
 .icon-edit:before {
-  content: "\e6cc";
+  content: "\e62e";
+}
+
+.icon-consent:before {
+  content: "\e630";
+  color: #e96900;
+  font-size: 20px;
+  text-shadow: 5px 2px 5px #cccccc;
+  -webkit-transition: font-size 0.25s linear, width 0.25s linear;
+  -moz-transition: font-size 0.25s linear, width 0.25s linear;
+  transition: font-size 0.25s linear, width 0.25s linear;
+}
+
+.icon-consent:hover {
+  font-size: 40px;
 }
 
 .icon-updatetime:before {

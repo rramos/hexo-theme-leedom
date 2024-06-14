@@ -7,6 +7,11 @@
   
   <body>
     <%- partial('_partial/tagmanager_end') %>
+
+<!-- make sure the config gets loaded before Klaro -->
+<%- js(['/js/klaro-config.js']) %>
+<script defer type="text/javascript" src="https://cdn.kiprotect.com/klaro/v0.7/klaro-no-css.js"></script>
+
     <div id="app">
       <%- partial('_partial/name') %>
       <%- partial('_partial/links') %>
@@ -19,6 +24,8 @@
       <%- partial('_partial/backtotop') %>
 
       <%- partial('_partial/search') %>
+      
+      <%- partial('_partial/consent') %>
 
     </div>
   </body>

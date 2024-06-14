@@ -88,3 +88,6 @@ tagmanager:
 googlecrux:
   enable: true
   id: "Em0OaYgLD4MC3tIHbwqDxAklIn7JzrtipNZd7z1kqFI"
+
+consent:
+  enable: true
