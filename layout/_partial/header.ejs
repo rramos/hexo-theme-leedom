@@ -28,6 +28,9 @@
       title = "about"
     }
   %>
+
+  <%- autoCanonical(config, page) %>
+
   <title>
     <% if (title) { %>
       <%= __(title) %> 

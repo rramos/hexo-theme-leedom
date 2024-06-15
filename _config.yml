@@ -91,3 +91,6 @@ googlecrux:
 
 consent:
   enable: true
+
+newsletter:
+  enable: false  
