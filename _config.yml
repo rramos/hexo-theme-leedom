@@ -95,5 +95,9 @@ consent:
 newsletter:
   enable: false
 
-webpushr:
+clarity:
   enable: true
+  id: ms0b2q35b6
+
+webpushr:
+  enable: false

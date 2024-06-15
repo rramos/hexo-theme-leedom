@@ -76,17 +76,15 @@
   <!-- fancybox -->
   <%- js(['/js/fancybox.js']) %>
 
-  <!-- webpusher -->
-  <% if (theme.webpushr.enable) { %>
-    <%- js(['/js/webpushr-sw.js']) %>
-  <% } %>
-
-
   <%- partial('_partial/tagmanager_start') %>
   <%- partial('_partial/googlecrux') %>
+  <%- partial('_partial/clarity') %>
 
+  <!-- webpusher -->
+  <!-- service requires root location :( 
+   <% if (theme.webpushr.enable) { %>
+    <%- js(['/js/webpushr-sw.js']) %>
+  <% } %>  
+  -->
   
-  
-
-
 </head>
