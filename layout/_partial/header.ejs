@@ -77,10 +77,10 @@
   <%- js(['/js/fancybox.js']) %>
 
   <%- partial('_partial/tagmanager_start') %>
+  <%- partial('_partial/googlecrux') %>
+  <%- partial('_partial/webpushr') %> 
+  
+  
 
-  <% if (theme.googlecrux.enable) { %>
-    <!-- Googel site verification -->
-    <meta name="google-site-verification" content='<%- theme.googlecrux.id %>'' />
-  <% } %>
 
 </head>

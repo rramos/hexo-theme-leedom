@@ -93,4 +93,7 @@ consent:
   enable: true
 
 newsletter:
-  enable: false  
+  enable: false
+
+webpushr:
+  enable: true
