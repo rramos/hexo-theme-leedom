@@ -1,8 +1,8 @@
 <% if (theme.webpushr.enable) { %>
-  <!-- webpusher -->
+  <!-- hexo plugin: hexo-webpushr-notification -->
 
-  <%- js(['/js/webpushr-sw.js']) %>
-
+  <%- js(['/webpushr-sw.js']) %>
+  
   <script>
     (
         function (w, d, s, id) {
@@ -13,8 +13,10 @@
           fjs.parentNode.appendChild(js);
         }(
           window, document, 'script', 'webpushr-jssdk'));
-      webpushr('setup', { 'key': 'BGON3evm0aCcG-ZpkVez8Q8GLrn4527R6YkL4nsU861337AfhJoOvnVU7eJ6ixjspxhic7ecVXvnhGgJz0cfDrE' });
+      webpushr('setup', { 'key': '<%- theme.webpushr.id %>' });
   </script>
   <!-- end webpushr tracking code -->
 
   <% } %>
+
+  type="text/plain" data-type="application/javascript" async data-name="google-analytics" data-src=
