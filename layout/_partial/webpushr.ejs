@@ -1,6 +1,8 @@
 <% if (theme.webpushr.enable) { %>
   <!-- webpusher -->
 
+  <%- js(['/js/webpushr-sw.js']) %>
+
   <script>
     (
         function (w, d, s, id) {
