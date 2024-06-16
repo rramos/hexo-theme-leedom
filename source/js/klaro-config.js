@@ -57,7 +57,7 @@ var klaroConfig = {
         {
             // In GTM, you should define a custom event trigger named `klaro-clarity-accepted` which should trigger the Google Analytics integration.
             name: 'microsoft-clarity',
-            required: true,
+            required: false,
             cookies: [
                 /^_ga(_.*)?/ // we delete the Google Analytics cookies if the user declines its use
             ],
