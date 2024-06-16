@@ -1,4 +1,7 @@
-$(document).scroll(function() {
+let manager = klaro.getManager();
+if (manager.getConsent('newsletter')){
+
+  $(document).scroll(function() {
 
     var y = $(this).scrollTop(),
         news = $('.news');
@@ -13,4 +16,5 @@ $(document).scroll(function() {
     
     // TODO: missing reset when changing links
     // TODO: missing fadeout when finish 
-});  
+  });
+}
