@@ -2,11 +2,17 @@
 
 <!-- Microsoft Clarity -->
 <script type="text/javascript">
+
+if (!window.location.host.includes('localhost')) {
   (function(c,l,a,r,i,t,y){
       c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-      t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-      y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      t=l.createElement(r);t.async=1;
+      t.src="https://www.clarity.ms/tag/"+i;
+      y=l.getElementsByTagName(r)[0];
+      y.parentNode.insertBefore(t,y);
   })(window, document, "clarity", "script", "ms0b2q35b6");
-</script>
+}
 
+</script>
+<!-- <script type="text/plain" data-type="application/javascript" async data-name="google-analytics" data-src="https://www.googletagmanager.com/gtag/js?id=<%- theme.ga4.id %>"></script> -->
 <% } %>    

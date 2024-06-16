@@ -430,7 +430,7 @@ a:hover {
 .consent-icon {
   position: fixed;
   left: 1.2rem;
-  bottom: 2.2rem;
+  top: 1rem;
   font-weight: bold;
 }
 

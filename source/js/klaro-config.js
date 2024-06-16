@@ -35,7 +35,7 @@ var klaroConfig = {
             cookies: [
                 /^_ga(_.*)?/ // we delete the Google Analytics cookies if the user declines its use
             ],
-            purposes: ['marketing'],
+            purposes: ['analytics'],
             onAccept: `
                 // we grant analytics storage
                 gtag('consent', 'update', {
@@ -55,6 +55,33 @@ var klaroConfig = {
             },
         },
         {
+            // In GTM, you should define a custom event trigger named `klaro-clarity-accepted` which should trigger the Google Analytics integration.
+            name: 'microsoft-clarity',
+            required: true,
+            cookies: [
+                /^_ga(_.*)?/ // we delete the Google Analytics cookies if the user declines its use
+            ],
+            purposes: ['analytics'],
+            onAccept: `
+                // we grant analytics storage
+                gtag('consent', 'update', {
+                    'analytics_storage': 'granted',
+                })
+            `,
+            onDecline: `
+                // we deny analytics storage
+                gtag('consent', 'update', {
+                    'analytics_storage': 'denied',
+                })
+            `,
+            translations: {
+                en: {
+                    description: 'Clarity is a free user behavior analytics tool that helps you understand how users are interacting with your website through session replays and heatmaps'
+                },
+            },
+        },
+        {
+            // In GTM, you should define a custom event trigger named `klaro-webpusher-accepted` which should trigger the Google Analytics integration.
             name: 'webpusher',
             required: false,
             purposes: ['marketing'],
