@@ -24,7 +24,7 @@
         }
       %>
       <div class="post-item" title="<%- item.title %>">
-        <div class="time-m-d"><%- item.date.format("MM-DD") %></div>
+        <div class="time-m-d"><%- item.date.format("DD-MM") %></div>
         <div class="title">
           <a href="<%- url_for(item.path) %>">
             <% if(item.title !== "") { %>

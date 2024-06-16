@@ -1,35 +1,35 @@
-# 相关配置说明
-  # favicon: 网站图标
-  # avatar: 主题用户头像与昵称
-  # rss: rss订阅
-  # prevnext: 文章末尾的上一页与下一页
-  # footer: 页脚信息
-  # search: 文章搜索
+# Related configuration instructions
+  # favicon: Website icon
+  # avatar: Theme user avatar and nickname
+  # rss: rss
+  # prevnext: Previous and next pages at the end of the article
+  # footer: Footer information
+  # search: Article search
 
-# enable: 是否开启相应功能，可选true || false
+# enable: Whether to enable the corresponding function, optional true || false
 
-# 网站图标
+# Website icon
 favicon:
-  enable: false
+  enable: true
   icon: /images/favicon.png
   touch_icon: /images/favicon.png
 
-# 用户头像与昵称
+# User avatar and nickname
 avatar:
-  author_photo: /images/rramos-avatar.png
-  author_nickname: rramos.github.io 
+  author_photo: /images/avatar.png
+  author_nickname: Rui Ramos 
   path: /
 
-# 文章末尾的上一页与下一页
+# Previous and next pages at the end of the article
 prevnext:
   enable: true
 
-# 链接信息
+# Link Information
 link: 
-  # name: 名称
-  # icon: 图标，目前仅支持IconFont部分图标
-  # path: 地址
-  # target: 跳转方式
+  # name: name
+  # icon: Icon, currently only supports some icons of IconFont
+  # path: path
+  # target: target
   -
     # 档案
     name: archives
@@ -57,48 +57,54 @@ link:
     icon: wechat
     path: https://discord.gg/YfCmqpG53p 
   -
-    # rss需安装 hexo-generator-feed 插件
-    # 具体参照https://github.com/hexojs/hexo-generator-feed
+    # rss - hexo-generator-feed 
+    # - https://github.com/hexojs/hexo-generator-feed
     name: rss
     icon: rss
     path: /atom.xml
     target: _blank
 
 
-# 页脚信息
+# Footer Information
 footer:
   -
     name: Copyright © Rui Ramos 2024
     path: https://github.com/rramos
 
-# 文章搜索
+# Article search
 search:
   enable: true
   placeholder: 
 
-# Added GA4 Configuration
+# Google Analytics
 ga4:
   enable: false
   id: G-6VMKQTVJC2
 
+# Google Tag Manager
 tagmanager:
   enable: true
   id: GTM-MXRC4DK
 
+# GoogleCrux
 googlecrux:
   enable: true
   id: "Em0OaYgLD4MC3tIHbwqDxAklIn7JzrtipNZd7z1kqFI"
 
+# Klaro Consent form
 consent:
   enable: true
 
+# Newsletter Subscription
 newsletter:
   enable: false
 
+# MS Clarity
 clarity:
   enable: true
   id: ms0b2q35b6
 
+# Webpushr
 webpushr:
   enable: false
   id: BGON3evm0aCcG-ZpkVez8Q8GLrn4527R6YkL4nsU861337AfhJoOvnVU7eJ6ixjspxhic7ecVXvnhGgJz0cfDrE

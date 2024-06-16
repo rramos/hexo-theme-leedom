@@ -1,0 +1,17 @@
+<% if (theme.newsletter.enable) { %>
+
+    <%- js(['/js/newsletter.js']) %>
+    <%- css(['/css/newsletter.css']) %>
+
+        <div class="news-wrap">
+          <div class="news">
+            <div class="news-content">
+
+              <iframe data-w-type="embedded" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://smqry.mjt.lu/wgt/smqry/x4jx/form?c=58ca1f43" width="100%" style="height: 0;"></iframe>
+              <script type="text/javascript" src="https://app.mailjet.com/pas-nc-embedded-v1.js"></script>
+
+            </div>
+          </div>
+        </div>
+
+  <% } %>
