@@ -1,0 +1,8 @@
+<nav class="post-navigation">
+    <% if(page.prev !== 0){ %>
+      <a id="prev" class="index-nav" href="<%- url_for(page.prev_link)%>">&lt;&nbsp;NEWER</a>
+    <% } %>
+    <% if(page.next !== 0){ %>
+      <a id="next" class="index-nav" href="<%- url_for(page.next_link)%>">OLDER&nbsp;&gt;</a>
+    <% } %>
+</nav>
