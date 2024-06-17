@@ -1,7 +1,7 @@
-<!-- 归档页，展示本站所有文章，按照年份降序归类，url形式：https://yoursite/archives/ -->
+<!-- Archive page, showing all articles on this site, sorted in descending order by year：https://yoursite/archives/ -->
 
-<!-- last: 按年份把文章分组，当前遍历到的年份 -->
-<!-- now: 当前遍历到的文章的发布年份 -->
+<!-- last: Group articles by year, the year currently traversed -->
+<!-- now: The publication year of the currently traversed article -->
 
 <div class="container archives">
   <div class="post-list">
@@ -14,7 +14,7 @@
         if (curr !== prev) {
           prev = curr;
       %>
-        <!-- 后续文章的发布年份呈现 -->
+        <!-- The publication year of subsequent articles is presented -->
         <div class="content-title">
           <h2>
             <span><%- curr %></span>

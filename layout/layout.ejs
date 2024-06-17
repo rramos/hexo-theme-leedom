@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="<%= config.language %>">
-
   <%- partial('_partial/header') %>
-
     <body>
-
       <!-- Klaro Consent Management -->
       <% if (theme.consent.enable) { %>
           <%- js(['/js/klaro-config.js']) %>
@@ -26,7 +23,7 @@
           <%- partial('_partial/consent') %>
           <%- partial('_partial/newsletter') %>
           <%- partial('_partial/webpushr') %>
-        </div> <!-- app -->
+      </div> <!-- app -->
     </body>
 
 </html>

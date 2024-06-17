@@ -60,7 +60,6 @@
     <%- css(['/css/post.css']) %>
   <% } %>
 
-  
   <!-- Include klaro css for consent banner -->
   <% if (theme.consent.enable) { %>
      <%- css(['/css/klaro.css']) %>
@@ -70,8 +69,7 @@
   <%- js(['/js/jquery.min.js']) %>
 
   <!-- fancybox -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" rel="stylesheet">
-  <script async src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+  <%- js(['/js/jquery.fancybox.min,js']) %>
 
   <!-- fancybox -->
   <%- js(['/js/fancybox.js']) %>
