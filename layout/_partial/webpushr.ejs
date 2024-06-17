@@ -2,6 +2,9 @@
   <!-- hexo plugin: hexo-webpushr-notification -->
 
   <script type="text/plain" data-type="text/javascript" async data-name="webpushr">
+    let manager = klaro.getManager();
+    if (manager.getConsent('webpushr')){
+      (
         function (w, d, s, id) {
           if (typeof (w.webpushr) !== 'undefined') return;
           w.webpushr = w.webpushr || function () {
@@ -11,6 +14,7 @@
         }( window, document, 'script', 'webpushr-jssdk' )
       );
       webpushr('setup', { 'key': '<%- theme.webpushr.id %>' });
+    }
   </script>
   <!-- end webpushr tracking code -->
   <% } %>
